@@ -1,0 +1,135 @@
+/* 
+Garden Shop Website - CSS Styles for Shop Page
+Author: Joao Cardoso
+Date: 27/10/2024
+
+CSS design inspirations taken from:
+- General e-commerce design patterns from various web tutorials, including W3Schools for grid and hover effects.
+*/
+
+/* General reset to standardize padding, margins, and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling for font and color */
+body {
+    font-family: Arial, sans-serif; /* Common, easy-to-read font */
+    font-size: large; /* Increased font size for better readability */
+    font-weight: bold; /* Bold text for emphasis */
+    font-style: italic; /* Adds a subtle stylistic touch */
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark gray text color */
+}
+
+/* Container to center and restrict the width of the content */
+.container {
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 15px; /* Adds padding on the sides */
+}
+
+/* Logo styling for consistent header appearance */
+.logo {
+    height: 100px; /* Fixed height */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space to the right */
+}
+
+/* Header styling for a branded look */
+header {
+    background-color: #4CAF50; /* Green background color matching the theme */
+    padding: 10px 0; /* Vertical padding */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers the text */
+}
+
+.header-content h1 {
+    margin-bottom: 10px; /* Space below the header */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none; /* Removes default list bullets */
+    padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+    display: inline; /* Horizontal display of list items */
+    margin: 0 15px; /* Adds horizontal space between items */
+}
+
+nav ul li a {
+    color: white; /* White text for contrast */
+    text-decoration: none; /* Removes underline */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline appears on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px; /* Adds space inside the main content */
+    text-align: center; /* Centers text within the main content */
+}
+
+.hero-section h2 {
+    font-size: 28px; /* Larger font size for the section title */
+    color: #18511a; /* Dark green color for thematic consistency */
+}
+
+/* Styling for the "Shop Now" section */
+.products-grid {
+    margin-top: 20px; /* Space between the title and grid */
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 30px; /* Space between grid items */
+    padding: 10px; /* Padding around the grid */
+}
+
+.product {
+    border: 1px solid #ccc; /* Light border around each product */
+    padding: 20px; /* Inner padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transformation for hover */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+    background-color: #fff; /* White background for contrast */
+}
+
+.product img {
+    width: 100%; /* Full width to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.product h4 {
+    font-size: 18px; /* Size for product titles */
+    color: #333; /* Dark gray color */
+    margin-top: 10px; /* Space above the title */
+}
+
+.product p {
+    font-size: 14px; /* Smaller font for descriptions */
+    margin-top: 5px; /* Space above the paragraph */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Hover effect for interactivity */
+}
+
+/* Footer styling */
+footer {
+    background-color: #b3b3b3; /* Light gray background */
+    color: white; /* White text color */
+    text-align: center; /* Centers footer content */
+    padding: 10px; /* Padding for space */
+    margin-top: 20px; /* Space above the footer */
+}
+
+/* Footer content padding */
+.footer-content {
+    padding: 10px; /* Inner padding */
+}

@@ -1,0 +1,208 @@
+/* 
+Garden Shop Website - CSS Styles
+Author: Joao Cardoso
+Date: 27/10/2024
+
+Some styling techniques and code snippets were adapted from:
+- W3Schools (General CSS properties and button styles): https://www.w3schools.com/
+- Bootstrap (Carousel structure and styling): https://getbootstrap.com/
+
+I have included some custom color schemes, layout adjustments, and additional styling for accessibility.
+*/
+/* General reset padding, margins, and apply consistent box-sizing for predictable and consistency layout, – keeping it clean and steady */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with basic font properties and background color */
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container to wrap all elements, centers content and adds padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Logo styling, sets a fixed height, allows width to adjust automatically */
+.logo {
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Header styling with background color and padding */
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    color: white;
+}
+
+/* Centers header content (including logo and navigation) */
+.header-content {
+    text-align: center;
+}
+
+/* Header title styling, adds margin for spacing */
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation menu styling inspired by W3Schools (https://www.w3schools.com/howto/howto_css_topnav.asp) */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline; /* Makes list items display horizontally */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Color for better readability on green background */
+    text-decoration: none; /* Removes underline from the links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover to make it interactive */
+}
+
+/* Main content area with padding */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero section styling - separates the hero visually from other sections */
+.hero-section {
+    margin-top: 20px;
+}
+
+/* Image container styling - makes sure that the image is responsive */
+.image-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Garden image styling - set fixed width for it to be consistent displayed */
+#garden-img {
+    width: 40%;
+    height: auto;
+}
+
+/* Button container for centering the button */
+.button-container {
+    text-align: center;
+}
+
+/* Shop button styling inspired by W3Schools button examples (https://www.w3schools.com/css/css3_buttons.asp). This button is interactive, with JavaScript providing the functionality in script2.js */
+#shop-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#shop-btn:hover {
+    background-color: #244e26; /* Darker green on hover for visual feedback */
+}
+
+/* Introduction Section with custom background image */
+#introduction {
+    padding: 50px 20px; /* Extra padding for more space inside the section, Adds inner spacing */
+    background: url('images/garden-placeholder_background.png'); /* Added this background image to give some visual texture to the page */
+    background-size: contain; /* Makes the entire image fit inside the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    color: black; /* Keep the text color black for contrast */
+}
+
+/* Styling for Introduction Section heading */
+#introduction h1 {
+    font-size: 28px;
+    color: #18511a; /* Dark green for garden theme */
+    margin-bottom: 15px;
+}
+
+/* Styling for Introduction Section paragraph text */
+#introduction p {
+    font-size: 16px;
+    line-height: 1.6; /* Adds line spacing to make easier to read*/
+    margin-bottom: 10px;
+}
+
+
+
+/* Carousel section with custom font size and color */
+#carousel-section {
+    font-size: 20px;
+    color: #18511a;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Carousel container adapted from Bootstrap carousel concept (https://getbootstrap.com/docs/5.0/components/carousel) */
+.carousel {
+    margin: 0 auto;
+    max-width: 600px; /* Limits carousel width to fit better in the screen */
+    position: relative;
+}
+/* Carousel image styling - responsive with rounded corners */
+.carousel img { 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Carousel controls - aligns buttons and positions them over the carousel */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%; /* Centers controls vertically */
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+/* Carousel buttons styled with green background */
+.carousel-controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.carousel-controls button:hover {
+    background-color: #45a049;
+    opacity: 1; /* Increases opacity on hover */
+}
+
+/* Footer styling with gray background */
+footer {
+    background-color: #b3b3b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Footer content padding for separation and better visibility */
+.footer-content {
+    padding: 10px;
+}

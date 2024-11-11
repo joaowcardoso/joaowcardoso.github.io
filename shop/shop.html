@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    Shop - Garden Shop
+    Author: Joao Cardoso
+    Date: 27/10/2024
+
+    This page displays a grid of 20 garden products, complete with images, descriptions, and prices. 
+    Certain design aspects were taken from:
+    - General web design practices for e-commerce product grids.
+    - Modal pop-ups for product details from W3Schools: https://www.w3schools.com/howto/howto_css_modals.asp
+
+    Product images and descriptions sourced from the official Garden Shop website (thegardenshop.ie), 
+    as specified in the assignment brief.
+    -->
+
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Garden Shop</title>
+
+    <!-- Link to external CSS file for page styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for consistent page layout -->
+    <div class="container">
+
+        <!-- Header section with logo and navigation -->
+        <header>
+            <div class="header-content">
+                <!-- Logo linked to the homepage -->
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Garden Shop Logo" class="logo">
+                </a>
+
+                <!-- Navigation bar -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <!--<li><a href="shop.html">Shop</a></li>--> <!-- Current page link commented out -->
+                        <li><a href="../about/aboutUs.html">About Us</a></li>
+                        <li><a href="../contact/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main content section -->
+        <main>
+            <!-- Hero section introducing the products -->
+            <section class="hero-section">
+                <h2>Our Products</h2>
+
+                <!-- 
+                Product grid section displaying 20 products.
+                Grid structure inspired by common e-commerce layouts.
+                -->
+                <section class="products-grid">
+                    <!-- Each product is represented by a div with an image, title, description, and price -->
+                    <div class="product" data-product="1">
+                        <img src="images/Echeveria_Plant_fcyp-36.jpg" alt="Echeveria Plant">
+                        <h4>Echeveria Plant 'Mixed'</h4>
+                        <p>Succulent plant, perfect for indoors or outdoors.</p>
+                        <p><strong>€12.99</strong></p>
+                    </div>
+                    <div class="product" data-product="2">
+                        <img src="images/anemone-blubs-mix-blue-shades.jpg" alt="Anemone Bulbs">
+                        <h4>Anemone Bulbs 'Blue Shades'</h4>
+                        <p>Beautiful blue flowers, ideal for spring gardens.</p>
+                        <p><strong>€8.50</strong></p>
+                    </div>
+                    <div class="product" data-product="3">
+                        <img src="images/strawberry-plant-1.jpg" alt="Strawberry Plants">
+                        <h4>Strawberry Plants</h4>
+                        <p>Grow your own delicious strawberries.</p>
+                        <p><strong>€6.00</strong></p>
+                    </div>
+                    <div class="product" data-product="4">
+                        <img src="images/lemon-tree.jpg" alt="Lemon Tree">
+                        <h4>Lemon Tree</h4>
+                        <p>Fresh citrus, perfect for patios or gardens.</p>
+                        <p><strong>€25.99</strong></p>
+                    </div>
+                    <div class="product" data-product="5">
+                        <img src="images/blackcurrant-canes.jpg" alt="Blackcurrant">
+                        <h4>Blackcurrant</h4>
+                        <p>Rich in vitamin C, great for making jams.</p>
+                        <p><strong>€7.99</strong></p>
+                    </div>
+                    <div class="product" data-product="6">
+                        <img src="images/blueberry-plants.jpg" alt="Blueberry Plants">
+                        <h4>Blueberry</h4>
+                        <p>Sweet and nutritious berries, perfect for containers.</p>
+                        <p><strong>€10.50</strong></p>
+                    </div>
+                    <div class="product" data-product="7">
+                        <img src="images/lobelia-plant-starship-scarlet.jpg" alt="Lobelia">
+                        <h4>Lobelia</h4>
+                        <p>Vibrant scarlet blooms, great for borders and pots.</p>
+                        <p><strong>€3.99</strong></p>
+                    </div>
+                    <div class="product" data-product="8">
+                        <img src="images/elstar-apple-tree.jpg" alt="Apple Tree">
+                        <h4>Apple Tree</h4>
+                        <p>Elstar variety, perfect for homegrown apples.</p>
+                        <p><strong>€19.99</strong></p>
+                    </div>
+                    <div class="product" data-product="9">
+                        <img src="images/olive-tree.jpg" alt="Olive Tree">
+                        <h4>Olive Tree</h4>
+                        <p>Bring the Mediterranean feel to your garden.</p>
+                        <p><strong>€22.50</strong></p>
+                    </div>
+                    <div class="product" data-product="10">
+                        <img src="images/1872_lavender-seed.jpg" alt="Lavender">
+                        <h4>Lavender</h4>
+                        <p>Fragrant flowers, great for bees and butterflies.</p>
+                        <p><strong>€4.75</strong></p>
+                    </div>
+                    <div class="product" data-product="11">
+                        <img src="images/Rudbeckia-plant.jpg" alt="Rudbeckia">
+                        <h4>Rudbeckia</h4>
+                        <p>Golden blooms, perfect for summer gardens.</p>
+                        <p><strong>€5.99</strong></p>
+                    </div>
+                    <div class="product" data-product="12">
+                        <img src="images/heucheras.jpg" alt="Heucheras">
+                        <h4>Heucheras</h4>
+                        <p>Foliage plant, ideal for shade gardens.</p>
+                        <p><strong>€7.49</strong></p>
+                    </div>
+                    <div class="product" data-product="13">
+                        <img src="images/set-of-hand-tools.jpg" alt="Garden Tools">
+                        <h4>Set of Garden Tools</h4>
+                        <p>Durable hand tools, essential for gardening tasks.</p>
+                        <p><strong>€15.00</strong></p>
+                    </div>
+                    <div class="product" data-product="14">
+                        <img src="images/short-handled-garden-fork.jpg" alt="Garden Fork">
+                        <h4>Short Garden Fork</h4>
+                        <p>Sturdy fork, perfect for small garden beds.</p>
+                        <p><strong>€9.99</strong></p>
+                    </div>
+                    <div class="product" data-product="15">
+                        <img src="images/master-builder-spade.jpg" alt="Spade">
+                        <h4>Master Builder Spade</h4>
+                        <p>Strong spade, great for heavy-duty digging.</p>
+                        <p><strong>€24.99</strong></p>
+                    </div>
+                    <div class="product" data-product="16">
+                        <img src="images/hay-fork-2-prong.jpg" alt="Hay Fork">
+                        <h4>Hay Fork</h4>
+                        <p>2-prong fork, ideal for lifting and turning hay.</p>
+                        <p><strong>€17.99</strong></p>
+                    </div>
+                    <div class="product" data-product="17">
+                        <img src="images/metal-leaf-rake.jpg" alt="Metal Rake">
+                        <h4>Metal Rake</h4>
+                        <p>Durable metal rake for clearing leaves.</p>
+                        <p><strong>€14.50</strong></p>
+                    </div>
+                    <div class="product" data-product="18">
+                        <img src="images/garden-wheelbarrow.jpg" alt="Wheelbarrow">
+                        <h4>Wheelbarrow</h4>
+                        <p>Lightweight wheelbarrow, ideal for transporting soil.</p>
+                        <p><strong>€45.99</strong></p>
+                    </div>
+                    <div class="product" data-product="19">
+                        <img src="images/paving-brush.jpg" alt="Paving Brush">
+                        <h4>Paving Brush</h4>
+                        <p>Perfect for removing moss and weeds from paving.</p>
+                        <p><strong>€8.75</strong></p>
+                    </div>
+                    <div class="product" data-product="20">
+                        <img src="images/hose-reel-with-stand.jpg" alt="Hose Reel">
+                        <h4>30m Hose Reel & Stand</h4>
+                        <p>Long-lasting hose reel, ideal for large gardens.</p>
+                        <p><strong>€35.00</strong></p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <!-- Email contact link -->
+                <p>Contact us at: <a href="mailto:x24132969@student.ncirl.ie">x24132969@student.ncirl.ie</a></p>
+                <!-- Copyright notice -->
+                <p>&copy; 2024 Garden Shop</p>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

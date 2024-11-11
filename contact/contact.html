@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    Contact Us - Garden Shop
+    Author: Joao Cardoso
+    Date: 27/10/2024
+
+    This page was created for users to reach out with questions or connect via social media.
+    Some layout elements and CSS styles were taken from:
+    - W3Schools (Navigation bar and form structure): https://www.w3schools.com/
+    - Formspree (for enabling form submission without a backend and for validation): https://formspree.io/
+
+    Social media links sourced from the official Garden Shop website (thegardenshop.ie), 
+    as per the assignment instructions, to ensure accurate and up-to-date contact information.
+    -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Garden Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container to hold the entire content and center it on the page -->
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <!-- Logo linking back to the homepage -->
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Garden Shop Logo" class="logo">
+                </a>
+
+                <!-- Navigation bar inspired by W3Schools navigation tutorial (https://www.w3schools.com/howto/howto_css_topnav.asp) -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../shop/shop.html">Shop</a></li>
+                        <li><a href="../about/aboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Contact Section including form and social media links -->
+            <section id="contact" class="hero-section">
+                <div class="contact-container">
+                    <h2>Contact Us</h2>
+
+                    <p>If you have any questions, feel free to reach out using the form below, or connect with us through our social media channels!</p>
+
+                    <!-- Contact Form with Formspree integration for handling submissions -->
+                    <form action="https://formspree.io/f/xzzbdknj" method="post">  <!-- External service Formspree used to enable form submissions without a backend -->
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <!-- Social Media Links section for connecting with users on social platforms. I have used links from the website provided on the CA document -->
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/TheGardenShop.ie" target="_blank">Facebook</a></li>
+                            <li><a href="https://x.com/GardenShop_ie" target="_blank">X (formerly Twitter)</a></li>
+                            <li><a href="https://www.youtube.com/user/TheGardenShopIreland" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section with contact email and copyright notice -->
+        <footer>
+            <div class="footer-content">
+                <p>Contact us at: <a href="mailto:x24132969@student.ncirl.ie">x24132969@student.ncirl.ie</a></p>
+                <p>&copy; 2024 Garden Shop</p>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

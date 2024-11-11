@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    Garden Shop Website - Homepage
+    Author: Joao Cardoso
+    Date: 27/10/2024
+
+    This website was created for CA 1. 
+    Some design inspirations and code snippets were adapted from:
+    - W3Schools (Navigation bar structure and basic HTML setup): https://www.w3schools.com/
+    - Bootstrap (Carousel concept and styling ideas): https://getbootstrap.com/
+    Background image created in Adobe Illustrator specifically for the home page.
+    Designed to complement the garden theme and enhance visual appeal.
+    Logo sourced directly from the official Garden Shop website (thegardenshop.ie) 
+    as specified in the assignment instructions. 
+    Product images and descriptions sourced from the official Garden Shop website (thegardenshop.ie), 
+    as specified in the assignment brief.
+    -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Wrapper to contain everything -->
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <!-- Logo with link to the homepage -->
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Garden Shop Logo" class="logo">
+                </a>
+                
+                <!-- Navigation Menu for easy page access (adapted from W3Schools' navigation examples https://www.w3schools.com/tags/tag_nav.asp) -->
+                <nav>
+                    <ul>
+                        <li><a href="shop/shop.html">Shop</a></li>
+                        <li><a href="about/aboutUs.html">About Us</a></li>
+                        <li><a href="contact/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Introduction Section with site overview with some family history -->
+            <section id="introduction">
+                <h1>Welcome to Garden Shop</h1>
+                <p>"Step into the Garden Shop. Explore our green wonderland!"</p>
+                <p>Established in 2011 in Portarlington, County Laois, TheGardenShop.ie offers over 2,500 top-quality garden items, including tools, plants, accessories, and landscaping gear. We provide unbeatable prices and exceptional customer service to both gardening newcomers and seasoned landscapers.</p>
+                <p>In 2021, we opened the SOLAS Eco Garden Shop & Food Village — where sustainable gardening meets great value. Explore our range and find everything you need to create the garden of your dreams.</p>
+            </section>
+
+            <!-- Hero Section with a call-to-action button, JavaScript in script2.js makes this button interactive, allowing it to navigate to the shop page. (button modified from Bootstrap https://getbootstrap.com/docs/5.3/components/buttons/#button-tags) -->
+            <section id="hero" class="hero-section"> <!--Multiple sections in a document-->
+                <div class="button-container">
+                    <button id="shop-btn" aria-label="Visit Shop">Visit Shop</button>
+                </div>
+            </section>
+
+            <!-- Carousel Section showcasing featured products -->
+            <section id="carousel-section">
+                <h2>Featured Products</h2>
+                <div class="carousel">
+                    <!-- Image display for the carousel (carousel concept based on Bootstrap carousel design) JavaScript in script2.js controls the carousel interactivity, allowing users to navigate through images. -->
+                    <img id="carousel-image" src="shop/images/Echeveria_Plant_fcyp-36.jpg" alt="Echeveria Plant">
+                    <div class="carousel-controls">
+                        <!-- Carousel navigation buttons for previous and next slides -->
+                        <button id="prev-btn" aria-label="Previous slide">Prev</button>
+                        <button id="next-btn" aria-label="Next slide">Next</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <!-- Contact email with mailto link functionality -->
+                <p>Contact us at: <a href="mailto:x24132969@student.ncirl.ie">x24132969@student.ncirl.ie</a></p>
+                <p>&copy; 2024 Garden Shop</p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Link to external JavaScript file for interactivity (e.g., carousel functionality and the visit button) -->
+    <script src="script2.js" defer></script>
+</body>
+</html>

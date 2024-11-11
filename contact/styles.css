@@ -1,0 +1,209 @@
+/* 
+Garden Shop Website - CSS Styles for Contact Us Page
+Author: Joao Cardoso
+Date: 27/10/2024
+
+CSS design inspirations taken from:
+- W3Schools (general reset, form styling, button hover effects): https://www.w3schools.com/
+- Common web design practices for responsive layouts and styling.
+*/
+
+/* General reset to remove default padding and margins, and set box-sizing for consistent element sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for font and background color */
+body {
+    font-family: Arial, sans-serif; /* Common, web-safe font */
+    font-size: large; /* Larger font size for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    font-style: italic; /* Italicized text for aesthetic */
+    background-color: #f4f4f4; /* Neutral background color */
+    color: #333; /* Dark gray text for contrast */
+}
+
+/* Container to center and organize the content */
+.container {
+    max-width: 1200px; /* Maximum width for responsiveness */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 15px; /* Adds padding for better spacing */
+}
+
+/* Logo styling for consistent header branding */
+.logo {
+    height: 100px; /* Fixed height for uniform display */
+    width: auto; /* Auto width to maintain aspect ratio */
+    margin-right: 20px; /* Adds spacing to the right */
+}
+
+/* Header section styling */
+header {
+    background-color: #4CAF50; /* Green background to match branding */
+    padding: 10px 0; /* Vertical padding for better spacing */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers header content */
+}
+
+.header-content h1 {
+    margin-bottom: 10px; /* Adds bottom margin for spacing */
+}
+
+/* Navigation menu styling adapted from W3Schools' tutorials */
+nav ul {
+    list-style: none; /* Removes default list bullets */
+    padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+    display: inline; /* Displays links horizontally */
+    margin: 0 15px; /* Adds horizontal spacing between links */
+}
+
+nav ul li a {
+    color: white; /* White text color for contrast */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline appears on hover */
+}
+
+/* Main content section with center alignment */
+main {
+    padding: 20px; /* Adds padding for spacing */
+    text-align: center; /* Centers text */
+}
+
+.hero-section {
+    margin-top: 20px; /* Adds top margin for spacing */
+}
+
+/* Styling for contact and about sections for consistency */
+.about-container, .contact-container {
+    max-width: 800px; /* Limits width for readability */
+    margin: 0 auto; /* Centers the container */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Styling for headings */
+#about h2, #contact h2 {
+    font-size: 28px; /* Large font for emphasis */
+    color: #18511a; /* Dark green for thematic consistency */
+    margin-bottom: 20px; /* Adds bottom margin */
+}
+
+/* Paragraph and list item styling */
+#about p, #contact p, #about ul {
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Subheading styling */
+#about h3, #contact h3 {
+    color: #18511a; /* Thematic color */
+    margin-top: 20px; /* Adds top margin */
+}
+
+/* Styling for unordered lists */
+#about ul, #contact ul {
+    list-style-type: square; /* Square bullets */
+    padding-left: 20px; /* Indentation for list items */
+}
+
+#about ul li, #contact ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+/* Form styling adapted from W3Schools' form tutorials */
+form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Form label styling */
+form label {
+    margin-top: 10px; /* Adds top margin for spacing */
+    font-size: 16px; /* Consistent font size */
+}
+
+/* Input and textarea styling */
+form input, form textarea {
+    padding: 10px; /* Adds inner padding */
+    margin-top: 5px; /* Adds top margin for spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    width: 100%; /* Full width for form fields */
+}
+
+/* Focus state for form fields for better accessibility */
+form input:focus, form textarea:focus {
+    outline: none; /* Removes default outline */
+    border-color: #4CAF50; /* Green border for focus */
+}
+
+/* Button styling for form submission, inspired by W3Schools */
+button {
+    margin-top: 20px; /* Adds top margin */
+    padding: 10px 20px; /* Adds padding for a clickable area */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Removes border */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    width: 100%; /* Full width button */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Social media section */
+.social-media {
+    margin-top: 30px; /* Adds top margin */
+    text-align: center; /* Centers the section */
+}
+
+/* Styling for social media section heading */
+.social-media h3 {
+    color: #4CAF50; /* Green color for consistency */
+    margin-bottom: 10px; /* Adds bottom margin */
+}
+
+/* Social media list styling */
+.social-media ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+.social-media ul li {
+    display: inline-block; /* Displays items inline */
+    margin-right: 15px; /* Adds spacing */
+}
+
+/* Social media link styling */
+.social-media ul li a {
+    color: #4CAF50; /* Green color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover effect for social media links */
+.social-media ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #b3b3b3; /* Light gray background */
+    color: white; /* White text */
+    text-align: center; /* Centers footer content */
+    padding: 10px; /* Adds padding */
+    margin-top: 100px; /* Adds spacing from main content */
+}
+
+/* Footer content padding */
+.footer-content {
+    padding: 10px; /* Adds padding for spacing */
+}
